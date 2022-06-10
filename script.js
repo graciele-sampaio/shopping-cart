@@ -15,10 +15,11 @@ const createCustomElement = (element, className, innerText) => {
 };
 
 const getSkuFromProductItem = (item) => item.querySelector('span.item__sku').innerText;
-// console.log(getSkuFromProductItem(item));
 
 const cartItemClickListener = (event) => {
-  // coloque seu código aqui
+  const itemInTheCart = document.querySelector('.cart__item');
+  itemInTheCart.remove();
+  itemInTheCart.addEventListener('click', cartItemClickListener);
 };
 
 const createCartItemElement = ({ id: sku, title: name, price: salePrice }) => {
