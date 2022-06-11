@@ -55,13 +55,22 @@ const createProductItemElement = ({ id: sku, title: name, thumbnail: image }) =>
 };
 
 const returnItems = () => {
-  console.log(getSavedCartItems());
   ol.innerHTML = getSavedCartItems();
   const li = document.querySelectorAll('.cart__item');
-  console.log(li);
   li.forEach((element) => {
   element.addEventListener('click', cartItemClickListener);
   });
+};
+
+const emptyCart = () => {
+  const li = document.querySelectorAll('.cart__item');
+  console.log(li);
+  li.forEach((element) => element.remove());
+};
+
+const btn = () => {
+  const boton = document.querySelector('.empty-cart');
+  boton.addEventListener('click', emptyCart); 
 };
 
 const renderProductItems = async () => {
@@ -82,4 +91,9 @@ const renderProductItems = async () => {
 window.onload = () => { 
   renderProductItems();
   returnItems();
+  btn();
 };
+
+// acessar botão
+// ter a classe empty-car(pego por essa classe)
+// remover todos os itens do carrinho
