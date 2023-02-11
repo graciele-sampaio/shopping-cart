@@ -92,7 +92,3 @@ window.onload = () => {
   returnItems();
   btn();
 };
-
-// acessar botão
-// ter a classe empty-car(pego por essa classe)
-// remover todos os itens do carrinho
