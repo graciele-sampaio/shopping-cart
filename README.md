@@ -3,8 +3,8 @@
 </div>
 <h1 align="center">Shopping Cart</h1>
 
-<p>
-Página web simulando site de compras, utilizando a API do Mercado livre, é possível navegar pela loja, adicionar produtos, excluir produtos e esvaziar carrinho.
+<p align="center">
+Carrinho de compras utilizando a API do Mercado livre, é possível navegar pela loja, adicionar produtos, excluir produtos e esvaziar carrinho.
 </p>
 
 
